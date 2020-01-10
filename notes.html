@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>simpleNotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/general_foundicons.css" />
+    <link rel='stylesheet' href='css/app.css' />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="NotebookCtrl">
+        <div class="row">
+          <div class="large-12 columns">
+            <h1>Add Notes to Remember Topics</h1>
+            <p>Notes must be made inoder to Remember everything , that's why we are here .. </p>
+          </div>
+        </div>
+        <hr>
+        <form ng-submit="addNote(noteTitle);resetForm();">
+          <div class="row">
+            <div class="large-6 columns">
+              <div class="row collapse">
+                <div class="small-10 columns">
+                  <input type="text" placeholder="Add a Note" ng-model="noteTitle">
+                </div>
+                <div class="small-2 columns">
+                  <a href="#" class="button postfix" ng-disabled="!noteTitle" ng-click="addNote(noteTitle);resetForm();">Add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <hr>
+        <my-notebook notes="getNotes()" ondelete="deleteNote(id)"></my-notebook>
+    </div>
+
+    <script src="js/vendor/angular/angular.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+</html>

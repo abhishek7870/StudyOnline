@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/infinity.css">
+    <title>infinity</title>
+
+  </head>
+  <body>
+    <!-- navigation -->
+
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+          <img src="images/infinity.jpg" class="rounded-circle ml-2" alt="logo"  style="width:40px;">
+        </a><a class="navbar-brand" href="#">
+          <img src="images/infinity_name.png" class="img-thumbnail" alt="logo" style="width:100px">
+        </a>
+        <!-- band logo-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <h5 class="nav-link dropdown-toggle ml-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="far fa-list-alt mr-2"></i>Sem-NOTES
+              </h5>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">  
+                <a class="dropdown-item" href="#">Semester-1</a>
+                <a class="dropdown-item" href="#">Semester-2</a>
+                <a class="dropdown-item" href="#">Semester-3</a>
+                <a class="dropdown-item" href="#">Semester-4</a>
+                <a class="dropdown-item" href="#">Semester-5</a>
+                <a class="dropdown-item" href="#">Semester-6</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">more .. </a>
+              </div>
+            </li>
+          </ul>
+          <ul>          
+              <form action="https://www.google.com/search" method="GET" class="form-inline  mr-2 ml-2 my-lg-0 " style="padding-top: 10px;">
+                <div class="form-group">
+                <input class="form-control  form-control-lg mr-sm-0 col-md-8 bg-light border-0" style="border-radius: 5px 0px 0px 5px" type="search" placeholder="Search for courses"name="q" aria-label="Search">
+                <button class="btn bg-light btn-lg my-2 my-sm-0 col-md-2 px-2 py-2" style="border-radius: 0px 5px 5px 0px" type="submit" value="Search"><i class="fas fa-search text-danger"></i></button>
+                </div>      
+              </form>
+          </ul>
+        </div>
+        <a method="GET" action="/note" id="rediect" class="nav-link btn-light mr-2 ml-2" onclick="window.open('http://localhost:3000/notes.html')">Add-Notes</a>
+        <a class="abc nav-link btn-danger mr-2" href="/logout">Logout</a>
+      </nav>
+
+    <!-- navigation ends  -->
+      <!-- jumbotron start -->
+ <div class="jumbotron big-banner mb-0 jumbotron-fluid" style="height: 550px; padding-top: 150px">
+  <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+                  <div class="col-md-5">
+                  <h1 class="display-5" style="color:royalblue">Go Limitless</h1>
+                  <h3 style="color:royalblue">Start Coding , Start Learning </h3>
+                  <p style="color:red">Spread your knowladge to others ...</p>
+                </div>
+                 <div class="col-md-6">
+                  <form class="form-inline my-2 my-lg-0 ">
+                    <input action="https://www.google.com/search" class="form-control  form-control-lg mr-sm-1 col-md-8 " type="search" placeholder="What do you want to learn?" aria-label="Search">
+                    <button class="btn btn-danger btn-lg my-2 my-sm-0 col-md-2  px-2 py-2" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+               </div>
+          </div>
+   </div>
+</div>
+<!-- jumbotron ends -->
+ <div class="container mt-3">
+        <h3><small class="text-muted">Find Different Topics..</small></h3>
+            <div class="card-deck">
+                    <div class="card"  style="height:330px">
+                    <a onclick="document.location.href='/python';"><img class="card-img-top" src="images/python.jpg" alt="Card image cap"></a>
+                      <div class="card-body px-2">
+
+                        <h5 class="card-title">Python</h5>
+                        <p>Python is an interpreted, high-level, general-purpose programming language.</p>
+                        <p class="card-text">
+                          <form method="GET" action="/thankyou" id="rediect">
+                            <button type="button" value='back' class="btn btn-dark" onclick="document.location.href='/python';">Learn About Python</button>
+                          </form>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card ml" style="height:330px">
+                     <a href="#"><img class="card-img-top" src="images/html.jpg" alt="Card image cap"></a> 
+                      <div class="card-body px-2">
+                        <h5 class="card-title">HTML and CSS</h5>
+                        <p class="card-text">HTML and CSS are two of the core technologies for building Web pages (Basics of web).</p>
+                        <p class="card-text">
+                            <button type="button" class="btn btn-dark ">  HTML & CSS </button>  
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" style="height:330px">
+                    <a href="#"><img class="card-img-top" src="images/cloud.jpg" alt="Card image cap"></a>
+                      <div class="card-body px-2">
+                        <h5 class="card-title">Cloud Computing</h5>
+                         <p class="card-text">cloud computing is the delivery of computing services like storage, databases and more</p>
+                        <p class="card-text">
+                            <button type="button" class="btn btn-dark">Cloud Computing</button>  
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" style="height:330px">
+                            <a href="#"><img class="card-img-top" src="images/c++.jpg" alt="Card image cap"></a> 
+                            <div class="card-body px-2">
+                              <h5 class="card-title">C++ Tutorial</h5>
+                               <p class="card-text">C++ is a general-purpose programming language.It has object oriented and generic features</p>
+                               <p class="card-text">
+                               <button type="button" class="btn btn-dark">Learn About C++</button>  
+                               </p>
+                            </div>
+                    </div>
+                    <div class="card" style="height:330px">
+                            <a href="#"><img class="card-img-top" src="images/android.jpg" alt="Card image cap"></a> 
+                            <div class="card-body px-2">
+                              <h5 class="card-title">Android </h5>
+                             <p class="card-text">Android™ delivers a complete set of software for mobile devices: an OS and mobile applications</p>
+                               <p class="card-text">
+                               <button type="button" class="btn btn-dark">Learn About Android</button>  
+                               </p>
+                            </div>
+                    </div>
+                  </div>
+                  
+     </div>
+      <!-- image container start-->
+      <!-- second part-->
+      <div class="container mt-3">
+            <div class="card-deck">
+                    <div class="card"  style="height:330px">
+                  <a href="#"><img class="card-img-top" src="images/algo.png" alt="Card image cap"></a>
+                      <div class="card-body px-2">
+                        <h5 class="card-title">Algorithm</h5>
+                        <p>learn about Different algorithms with great teachers and video tutorials 
+                        </p>
+                        <p class="card-text">
+                            <button type="button" class="btn btn-dark">Learn Algorithm</button>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" style="height:330px">
+                     <a href="#"><img class="card-img-top" src="images/DBMS.png" alt="Card image cap"></a> 
+                      <div class="card-body px-2">
+                        <h5 class="card-title">Learn DBMS</h5>
+                        <p class="card-text">learn database managment system with us and follow your passion</p>
+                        <p class="card-text">
+                            <button type="button" class="btn btn-dark "> Learn DBMS</button>  
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" style="height:330px">
+                    <a href="#"><img class="card-img-top" src="images/ml.jpg" alt="Card image cap"></a>
+                      <div class="card-body px-2">
+                        <h5 class="card-title">Machine Learning</h5>
+                         <p class="card-text"> learn machine Learning with great tutorials video and just nailed it.
+                           <p class="card-text">
+                            <button type="button" class="btn btn-dark">Machine Learning</button>  
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" style="height:330px">
+                            <a href="#"><img class="card-img-top" src="images/os.jpg" alt="Card image cap"></a> 
+                            <div class="card-body px-2">
+                              <h5 class="card-title">Operating System</h5>
+                               <p class="card-text">Os is one of the most asked interview topic. start learing<p class="card-text">
+                               <button type="button" class="btn btn-dark">Operating-System</button>  
+                               </p>
+                            </div>
+                    </div>
+                    <div class="card" style="height:330px">
+                            <a href="#"><img class="card-img-top" src="images/android.jpg" alt="Card image cap"></a> 
+                            <div class="card-body px-2">
+                              <h5 class="card-title">Android </h5>
+                             <p class="card-text">Android™ delivers a complete set of software for mobile devices: an OS and mobile applications</p>
+                               <p class="card-text">
+                               <button type="button" class="btn btn-dark">Networking</button>  
+                               </p>
+                            </div>
+                    </div>
+                  </div>
+                  
+     </div>
+      <!-- second part ends here -->
+    <div class="container mt-3">
+      <h3><small class="text-muted">Achive Your Goals: </small></h3>
+      <div class="row">
+          <div class="col-md-4">
+                  <a a onclick="document.location.href='/thankyou';">
+                          <figure class="figure">
+                                  <img src="images/programming.jpg" style="height:200px" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                  <figcaption class="figure-caption">Should know about Seniors</figcaption>
+                          </figure>
+                  </a>
+          </div>
+          <div class="col-md-4">
+                  <a onclick="document.location.href='/feedback';">
+                          <figure class="figure">
+                                  <img src="images/question.png" style="height:200px" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                  <figcaption class="figure-caption">Ask your Doughts</figcaption>
+                          </figure>
+                  </a>
+          </div>
+          <div class="col-md-4">
+                  <a href="#">
+                          <figure class="figure">
+                                  <img src="images/classmates.jpg" style="height:200px" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                  <figcaption class="figure-caption">Know your Classmates</figcaption>
+                          </figure>
+                  </a>
+          </div>
+      </div>
+  </div>
+
+<!-- image container ends-->
+<hr />
+<span></span>
+<span></span>
+<div class="row mt-5 ml-2">
+  <div class="col-4 col-md-6">
+         <ul class="nav flex-column">
+                 <li class="nav-item">
+                   <a class="nav-link" onclick="document.location.href='/aboutus';">About Us</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Careers</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">blog</a>
+                 </li>
+         </ul>
+  </div>
+  <div class="col-4 col-md-6">
+         <ul class="nav flex-column">
+                 <ul class="nav flex-column">
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Topic</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Support</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">complain</a>
+                         </li>
+                 </ul>
+  </div>
+</div>
+<hr />
+    <!-- footer part-->
+    <div class="row" style="font-size: 14px">
+        <div class="col pl-5">
+                <img src="images/logo.jpg" width="100px"><span class="ml-3"> Copyright @ 2018-19 NIT_Durgapur Inst.</span>
+        </div>
+        <div class="col">
+                <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link text-info" href="#">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-info" href="#">Privacy and Cookie Policy</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-info" href="#">Intelectual Property</a>
+                        </li>
+                      </ul>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

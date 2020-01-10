@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Feedback </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+		<link rel="stylesheet" href="main.css">
+		<link rel="icon" href="/favicon.png" sizes="32x32">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+		<!-- Google Analytics -->
+		<script>
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-25562592-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script defer src="https://www.google-analytics.com/analytics.js"></script>
+		<!-- / Google Analytics -->
+	</head>
+	<body>
+		<section class="hero is-fullheight">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns is-vcentered">
+						<div id="main" class="column is-half is-centered has-nice-link">
+							<h1 class="title is-2">Feedback</h1>
+							<h2 class="title is-6">I appreciate your feedback 🙌</h2>
+							<form id="feedback-form" action="https://formspree.io/shastri.yogendra32@gmail.com" method="post">
+								<input type="hidden" name="_next" value="https://sindresorhus.com/feedback/?success">
+								<div class="field">
+									<label class="label">Name</label>
+									<div class="control">
+										<input class="input is-medium" type="text" name="name">
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Email*</label>
+									<div class="control">
+										<input class="input is-medium" type="email" name="email" required>
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Message*</label>
+									<div class="control">
+										<textarea class="textarea is-medium" placeholder="I'm a human. Please be nice." name="message" minlength="20" rows="7" required autofocus></textarea>
+									</div>
+								</div>
+								<div class="field">
+									<div class="control">
+										<button class="button is-large is-primary is-info" type="submit">Send Feedback</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
